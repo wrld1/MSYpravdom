@@ -362,13 +362,14 @@ body._touch .menu__list > li._active .menu__sub-list {
     position: relative;
     background-color: #cac3b8;
     left: 0;
+    min-width: 250px;
     flex: 1 1 100%;
     margin: 20px 0px 0px 0px;
     display: none;
   }
 
   .menu__sub-link {
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
   }
 
