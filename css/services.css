@@ -1,0 +1,95 @@
+.services_container {
+  text-align: center;
+  width: 66.6%;
+}
+
+.accordion {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #6b8996;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.accordion h5 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.accordion .icon {
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: #6b8996;
+  border-radius: 50%;
+  float: left;
+  padding-top: 3px;
+  padding-right: 0.5px;
+  transition: all 0.5s ease-in;
+  flex-shrink: 0;
+}
+
+.accordion .icon:after {
+  content: "\002B";
+  font-weight: 1000;
+  font-size: 30px;
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 2px solid #6b8996;
+  margin-left: 25px;
+  font-size: 18px;
+  text-align: left;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+}
+
+.panel p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.panel li {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  list-style: none;
+  padding: 5px 0;
+  border-bottom: 2px solid #cac3b8;
+}
+
+.active {
+  background-color: #6b8996;
+}
+
+.active .icon {
+  background: white;
+}
+
+.active .icon:after {
+  content: "\2212";
+  font-size: 30px;
+  font-weight: bolder;
+  color: #6b8996;
+}
+
+@media (max-width: 767px) {
+  .services_container {
+    width: 100%;
+  }
+}
+
+.test {
+  min-height: 1000px;
+}

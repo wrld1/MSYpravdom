@@ -1,0 +1,45 @@
+body {
+  background-color: #28272a;
+}
+
+.city__page-padding {
+  padding-top: 30px;
+}
+
+.swipers__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.city__page-title {
+  color: #cac3b8;
+  font-size: 45px;
+  line-height: 1;
+  text-align: center;
+}
+
+.city__map {
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 600px;
+  height: 450px;
+}
+
+@media (max-width: 991px) {
+  .city__page-title {
+    font-size: 30px;
+  }
+  .city__map {
+    width: 400px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .city__map {
+    width: 350px;
+    height: 300px;
+  }
+}

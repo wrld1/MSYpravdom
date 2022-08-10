@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>М.С.Управдом</title>
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header__scrolled">
+        <div class="header__container">
+          <a href="" class = "header__logo"><img src="/img/Logo.png" alt="logo"></a>
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <div class="menu__icon-burger"></div>
+            </div>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li><a data-goto=".full-screen" href="#" class="menu__link">Головна</a></li>
+                <li><a data-goto=".cities-grid" href="#cities" class="menu__link">Проєкти</a></li>
+                <li>
+                  <a data-goto=".services_container" href="#services" class="menu__link">Послуги </a>
+                  <svg class = "arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+                  <ul class="menu__sub-list">
+                    <li><a href="" class="menu__sub-link">Комплексне обслуговування багатоквартирних ОСББ</a></li>
+                    <li><a href="" class="menu__sub-link">Аварійне обслуговування житлових будинків</a></li>
+                    <li><a href="" class="menu__sub-link">Технічне обслуговування інженерних мереж в житлових будинках</a></li>
+                    <li><a href="" class="menu__sub-link">Проведення поточних і капітальних ремонтів</a></li>
+                    <li><a href="" class="menu__sub-link">Послуги керуючої компанії житловим фондом</a></li>
+                    <li><a href="" class="menu__sub-link">Послуги сантехніка</a></li>
+                    <li><a href="" class="menu__sub-link">Дератизація</a></li>
+                    <li><a href="" class="menu__sub-link">Дезінсекція</a></li>
+                    <li><a href="" class="menu__sub-link">Прочищення каналізації</a></li>
+                    <li><a href="" class="menu__sub-link">Підготовка будинку до опалювального сезону</a></li>
+                    <li><a href="" class="menu__sub-link">Зварювальні роботи</a></li>
+                    <li><a href="" class="menu__sub-link">Разові послуги бізнесу</a></li>
+                  </ul>
+              </li>
+                <li><a data-goto=".provide" href="#what-we-provide" class="menu__link">Про нас</a></li>
+                
+                <li>
+                    <a data-goto=".footer__container" href="#contacts" class="menu__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+        <!-- <nav class="navbar">
+          
+          <ul>
+            <li class="nav-item"><a href="#">Головна</a></li>
+            <li class="nav-item"><a href="#">Послуги</a></li>
+            <li class="nav-item"><a href="#">Про нас</a></li>
+            <li class="nav-item"><a href="#">Проєкти</a></li>
+            <li class="nav-item"><a href="#">Контакти</a></li>
+          </ul>
+        </nav> -->
+        <div class="full-screen">
+          <div class="full-screen__content">
+            <div class="full-screen__title">М.С. Управдом</div>
+            <div class="full-screen__text">
+              ЛІДЕРИ В СФЕРІ ЯКІСНОГО ОБСЛУГОВУВАННЯ БАГАТОКВАРТИРНИХ БУДИНКІВ
+            </div>
+            <a href="#cities"><span>Далі</span></a>
+          </div>
+          <video autoplay muted loop preload="auto" plays-inline class="header__video">
+            <source src="./img/header_video_fin.mp4" type="video/mp4" />
+          </video>
+      </div>
+      <!-- <header class="header">
+        <div class="container">
+
+        </div>
+      </header> -->
+      <main>
+        <div class="app-content" >
+          <div class="content__container" >
+            <div class="cities-grid section" id="cities">
+              <div class="cities-card" data-tilt data-tilt-max="4" data-tilt-speed="1000">
+                <img src="/img/Boyarka1.png" alt="Boyarka" />
+
+                <div class="cities-card__link">
+                  <h2 class="cities-card__title">Боярка</h2>
+                  <a class="cities-card__btn" href="https://facebook.com"
+                    >Переглянути<i class="arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="cities-card" data-tilt data-tilt-max="4" data-tilt-speed="1000">
+                <img src="/img/Krukivshina.png" alt="Krukivshina" />
+
+                <div class="cities-card__link">
+                  <h2 class="cities-card__title">Крюківщина</h2>
+                  <a class="cities-card__btn" href="krukivshina.html " target="_blank"
+                    >Переглянути<i class="arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="cities-card" data-tilt data-tilt-max="4" data-tilt-speed="1000">
+                <img src="/img/Tarasivka.png" alt="Tarasivka" />
+
+                <div class="cities-card__link">
+                  <h2 class="cities-card__title">Тарасівка</h2>
+                  <a class="cities-card__btn" href="uriivka.html" target="_blank"
+                    >Переглянути<i class="arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="cities-card" data-tilt data-tilt-max="4" data-tilt-speed="1000">
+                <img src="/img/Knyazhichi.png" alt="Knyazhichi" />
+
+                <div class="cities-card__link">
+                  <h2 class="cities-card__title">Княжичі</h2>
+                  <a class="cities-card__btn" href="knyazhuchi.html" target="_blank"
+                    >Переглянути<i class="arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="cities-card" data-tilt data-tilt-max="4" data-tilt-speed="1000">
+                <img src="/img/Irpin.png" alt="Irpin" />
+
+                <div class="cities-card__link">
+                  <h2 class="cities-card__title">Ірпінь</h2>
+                  <a class="cities-card__btn" href="https://facebook.com"
+                    >Переглянути<i class="arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="cities-card" data-tilt data-tilt-max="4" data-tilt-speed="1000">
+                <img src="/img/Urivka.png" alt="Uriivka" />
+
+                <div class="cities-card__link">
+                  <h2 class="cities-card__title">Юр'ївка</h2>
+                  <a class="cities-card__btn" href="uriivka.html" target="_blank"
+                    >Переглянути<i class="arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+              <div class="services_container section" id="services">
+                <h2 class="sub__title">Послуги</h2>
+                <hr class="vertical-lines" />
+                <div class="services-card__grid">
+                  <div class="accordion">
+                    <div class="icon"></div>
+                    <h5>Планування обслуговування</h5>
+                  </div>
+                  <div class="panel">
+                    <p>
+                      Компанія <strong>«М.С УПРАВДОМ»</strong> працює максимально прозоро, щоб розподіляти внески співвласників на управління будинком, а також сформувати відповідальне ставлення до своєї власності.
+                    </p>
+                  </div>
+                  <div class="accordion">
+                    <div class="icon"></div>
+                    <h5>Комплексне обслуговування багатоквартирного будинку</h5>
+                  </div>
+                  <div class="panel">
+                    <p>
+                    <ul>
+                      <li>Прибирання прибудинкової території.</li>
+                      <li>Прибирання місць загального користування в будинку.</li>
+                      <li>Технічне обслуговування інженерних систем опалення, гарячого та холодного водопостачання, водовідведення.</li>
+                      <li>Технічне обслуговування інженерних систем електропостачання.</li>
+                      <li>Бухгалтерське і абонентське обслуговування.</li>
+                      <li>Управління процесами утримання будинку та прибудинкової території.</li>
+                    </ul>
+                    </p>
+                  </div>
+                  <div class="accordion">
+                    <div class="icon"></div>
+                    <h5>Додаткові послуги</h5>
+                  </div>
+                  <div class="panel">
+                    <p>
+                      <ul>
+                        <li>Організація виконання робіт з поточного та капітального ремонту багатоквартирного будинку.</li>
+                        <li>Організація охорони спільного майна багатоквартирного будинку.</li>
+                        <li>Заміна вузлів обліку водо-, электро- та газопостачання</li>
+                        <li>Обслуговування ліфтів, систем пожежежної безпеки, вентиляційних та димових каналів.</li>
+                        <li>Дератизація та дезінфекція.</li>
+                      </ul>
+                    </p>
+                  </div> 
+                </div> 
+              </div>
+            
+            <h2 class="sub__title provide">Що отримують наші клієнти від нас</h2>
+            <div class="provide__container section" id="what-we-provide">
+              <hr class="vertical-lines" />
+              <div class="provide-card__grid">
+                <div class="provide-card">
+                  <div class="provide-card__icon" data-tilt data-tilt-max="12" data-tilt-speed="1000">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 199.2 128 208v32C128 248.8 120.8 256 112 256h-32C71.2 256 64 248.8 64 240V208zM64 304C64 295.2 71.2 288 80 288h32C120.8 288 128 295.2 128 304v32C128 344.8 120.8 352 112 352h-32C71.2 352 64 344.8 64 336V304zM224 432c0 8.801-7.199 16-16 16h-128C71.2 448 64 440.8 64 432v-32C64 391.2 71.2 384 80 384h128c8.801 0 16 7.199 16 16V432zM224 336c0 8.801-7.199 16-16 16h-32C167.2 352 160 344.8 160 336v-32C160 295.2 167.2 288 176 288h32C216.8 288 224 295.2 224 304V336zM224 240C224 248.8 216.8 256 208 256h-32C167.2 256 160 248.8 160 240v-32C160 199.2 167.2 192 176 192h32C216.8 192 224 199.2 224 208V240zM320 432c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16V432zM320 336c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32C256 295.2 263.2 288 272 288h32C312.8 288 320 295.2 320 304V336zM320 240C320 248.8 312.8 256 304 256h-32C263.2 256 256 248.8 256 240v-32C256 199.2 263.2 192 272 192h32C312.8 192 320 199.2 320 208V240zM320 144C320 152.8 312.8 160 304 160h-224C71.2 160 64 152.8 64 144v-64C64 71.2 71.2 64 80 64h224C312.8 64 320 71.2 320 80V144z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Аварійна служба</h3>
+                    <p>Наші фахівці в будь-який час усунуть проблему яка загрожує життю, здоров'ю або майну мешканців будинку</p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M191.1 224c0-17.72-14.34-32.04-32-32.04L144 192c-35.34 0-64 28.66-64 64.08v47.79C80 339.3 108.7 368 144 368H160c17.66 0 32-14.36 32-32.06L191.1 224zM256 0C112.9 0 4.583 119.1 .0208 256L0 296C0 309.3 10.75 320 23.1 320S48 309.3 48 296V256c0-114.7 93.34-207.8 208-207.8C370.7 48.2 464 141.3 464 256v144c0 22.09-17.91 40-40 40h-110.7C305 425.7 289.7 416 272 416H241.8c-23.21 0-44.5 15.69-48.87 38.49C187 485.2 210.4 512 239.1 512H272c17.72 0 33.03-9.711 41.34-24H424c48.6 0 88-39.4 88-88V256C507.4 119.1 399.1 0 256 0zM368 368c35.34 0 64-28.7 64-64.13V256.1C432 220.7 403.3 192 368 192l-16 0c-17.66 0-32 14.34-32 32.04L320 335.9C320 353.7 334.3 368 352 368H368z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Диспетчерська служба</h3>
+                    <p>Прийом заявок, вирішення аварійних питань щодо водопостачання, водовідведення, опалення, електропостачання тощо</p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 199.2 128 208v32C128 248.8 120.8 256 112 256h-32C71.2 256 64 248.8 64 240V208zM64 304C64 295.2 71.2 288 80 288h32C120.8 288 128 295.2 128 304v32C128 344.8 120.8 352 112 352h-32C71.2 352 64 344.8 64 336V304zM224 432c0 8.801-7.199 16-16 16h-128C71.2 448 64 440.8 64 432v-32C64 391.2 71.2 384 80 384h128c8.801 0 16 7.199 16 16V432zM224 336c0 8.801-7.199 16-16 16h-32C167.2 352 160 344.8 160 336v-32C160 295.2 167.2 288 176 288h32C216.8 288 224 295.2 224 304V336zM224 240C224 248.8 216.8 256 208 256h-32C167.2 256 160 248.8 160 240v-32C160 199.2 167.2 192 176 192h32C216.8 192 224 199.2 224 208V240zM320 432c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16V432zM320 336c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32C256 295.2 263.2 288 272 288h32C312.8 288 320 295.2 320 304V336zM320 240C320 248.8 312.8 256 304 256h-32C263.2 256 256 248.8 256 240v-32C256 199.2 263.2 192 272 192h32C312.8 192 320 199.2 320 208V240zM320 144C320 152.8 312.8 160 304 160h-224C71.2 160 64 152.8 64 144v-64C64 71.2 71.2 64 80 64h224C312.8 64 320 71.2 320 80V144z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Бухгалтерська служба</h3>
+                    <p>Повноцінне ведення фінансового, бухгалтерського та абонентського обліку, здача звітності, роздруківка та видача квитанцій, робота зі зверненнями</p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 199.2 128 208v32C128 248.8 120.8 256 112 256h-32C71.2 256 64 248.8 64 240V208zM64 304C64 295.2 71.2 288 80 288h32C120.8 288 128 295.2 128 304v32C128 344.8 120.8 352 112 352h-32C71.2 352 64 344.8 64 336V304zM224 432c0 8.801-7.199 16-16 16h-128C71.2 448 64 440.8 64 432v-32C64 391.2 71.2 384 80 384h128c8.801 0 16 7.199 16 16V432zM224 336c0 8.801-7.199 16-16 16h-32C167.2 352 160 344.8 160 336v-32C160 295.2 167.2 288 176 288h32C216.8 288 224 295.2 224 304V336zM224 240C224 248.8 216.8 256 208 256h-32C167.2 256 160 248.8 160 240v-32C160 199.2 167.2 192 176 192h32C216.8 192 224 199.2 224 208V240zM320 432c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16V432zM320 336c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32C256 295.2 263.2 288 272 288h32C312.8 288 320 295.2 320 304V336zM320 240C320 248.8 312.8 256 304 256h-32C263.2 256 256 248.8 256 240v-32C256 199.2 263.2 192 272 192h32C312.8 192 320 199.2 320 208V240zM320 144C320 152.8 312.8 160 304 160h-224C71.2 160 64 152.8 64 144v-64C64 71.2 71.2 64 80 64h224C312.8 64 320 71.2 320 80V144z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Кур'єрська служба</h3>
+                    <p>Забезпечує документообіг жителів з усіма інстанціями</p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 199.2 128 208v32C128 248.8 120.8 256 112 256h-32C71.2 256 64 248.8 64 240V208zM64 304C64 295.2 71.2 288 80 288h32C120.8 288 128 295.2 128 304v32C128 344.8 120.8 352 112 352h-32C71.2 352 64 344.8 64 336V304zM224 432c0 8.801-7.199 16-16 16h-128C71.2 448 64 440.8 64 432v-32C64 391.2 71.2 384 80 384h128c8.801 0 16 7.199 16 16V432zM224 336c0 8.801-7.199 16-16 16h-32C167.2 352 160 344.8 160 336v-32C160 295.2 167.2 288 176 288h32C216.8 288 224 295.2 224 304V336zM224 240C224 248.8 216.8 256 208 256h-32C167.2 256 160 248.8 160 240v-32C160 199.2 167.2 192 176 192h32C216.8 192 224 199.2 224 208V240zM320 432c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16V432zM320 336c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32C256 295.2 263.2 288 272 288h32C312.8 288 320 295.2 320 304V336zM320 240C320 248.8 312.8 256 304 256h-32C263.2 256 256 248.8 256 240v-32C256 199.2 263.2 192 272 192h32C312.8 192 320 199.2 320 208V240zM320 144C320 152.8 312.8 160 304 160h-224C71.2 160 64 152.8 64 144v-64C64 71.2 71.2 64 80 64h224C312.8 64 320 71.2 320 80V144z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Клінінгова служба</h3>
+                    <p>Прибирання прибудинкової території та сходових клітин, прибирання снігу та поспипання протиожеледними сумішами доріг та тротуарів</p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 199.2 128 208v32C128 248.8 120.8 256 112 256h-32C71.2 256 64 248.8 64 240V208zM64 304C64 295.2 71.2 288 80 288h32C120.8 288 128 295.2 128 304v32C128 344.8 120.8 352 112 352h-32C71.2 352 64 344.8 64 336V304zM224 432c0 8.801-7.199 16-16 16h-128C71.2 448 64 440.8 64 432v-32C64 391.2 71.2 384 80 384h128c8.801 0 16 7.199 16 16V432zM224 336c0 8.801-7.199 16-16 16h-32C167.2 352 160 344.8 160 336v-32C160 295.2 167.2 288 176 288h32C216.8 288 224 295.2 224 304V336zM224 240C224 248.8 216.8 256 208 256h-32C167.2 256 160 248.8 160 240v-32C160 199.2 167.2 192 176 192h32C216.8 192 224 199.2 224 208V240zM320 432c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16V432zM320 336c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32C256 295.2 263.2 288 272 288h32C312.8 288 320 295.2 320 304V336zM320 240C320 248.8 312.8 256 304 256h-32C263.2 256 256 248.8 256 240v-32C256 199.2 263.2 192 272 192h32C312.8 192 320 199.2 320 208V240zM320 144C320 152.8 312.8 160 304 160h-224C71.2 160 64 152.8 64 144v-64C64 71.2 71.2 64 80 64h224C312.8 64 320 71.2 320 80V144z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Технічна служба</h3>
+                    <p>Це закріплені за будинком інженер, електрик, сантехнік та інші спеціалісти</p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 0h-288C22.38 0 0 22.38 0 48v416C0 489.6 22.38 512 48 512h288c25.62 0 48-22.38 48-48v-416C384 22.38 361.6 0 336 0zM64 208C64 199.2 71.2 192 80 192h32C120.8 192 128 199.2 128 208v32C128 248.8 120.8 256 112 256h-32C71.2 256 64 248.8 64 240V208zM64 304C64 295.2 71.2 288 80 288h32C120.8 288 128 295.2 128 304v32C128 344.8 120.8 352 112 352h-32C71.2 352 64 344.8 64 336V304zM224 432c0 8.801-7.199 16-16 16h-128C71.2 448 64 440.8 64 432v-32C64 391.2 71.2 384 80 384h128c8.801 0 16 7.199 16 16V432zM224 336c0 8.801-7.199 16-16 16h-32C167.2 352 160 344.8 160 336v-32C160 295.2 167.2 288 176 288h32C216.8 288 224 295.2 224 304V336zM224 240C224 248.8 216.8 256 208 256h-32C167.2 256 160 248.8 160 240v-32C160 199.2 167.2 192 176 192h32C216.8 192 224 199.2 224 208V240zM320 432c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32c0-8.801 7.201-16 16-16h32c8.801 0 16 7.199 16 16V432zM320 336c0 8.801-7.199 16-16 16h-32c-8.799 0-16-7.199-16-16v-32C256 295.2 263.2 288 272 288h32C312.8 288 320 295.2 320 304V336zM320 240C320 248.8 312.8 256 304 256h-32C263.2 256 256 248.8 256 240v-32C256 199.2 263.2 192 272 192h32C312.8 192 320 199.2 320 208V240zM320 144C320 152.8 312.8 160 304 160h-224C71.2 160 64 152.8 64 144v-64C64 71.2 71.2 64 80 64h224C312.8 64 320 71.2 320 80V144z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Менеджер-адміністратор</h3>
+                    <p>Ця людина завжди знаходиться поряд з об'єктом і готовий прийти на допомогу. </p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M554.9 250.5c-17.62-35.37-68.12-35.25-85.87 0c-86.38 172.7-85.04 165.4-85.04 181.5C383.1 476.1 441.3 512 512 512s127.1-35.88 127.1-79.1C639.1 416.4 642 424.7 554.9 250.5zM439.9 416l72.15-143.1l71.98 143.1H439.9zM512 192c13.41 0 25.89-8.471 30.36-21.88c5.594-16.76-3.469-34.89-20.23-40.48l-122.1-40.1c.3125-2.877 .8712-5.687 .8712-8.648c0-44.18-35.81-80-79.1-80c-29.29 0-54.65 15.92-68.58 39.41l-113.3-37.76C121.3-3.963 103.2 5.162 97.64 21.9C92.05 38.66 101.1 56.78 117.9 62.38l126.3 42.11c7.061 21.84 22.95 39.65 43.78 48.77v294.7H144c-26.51 0-47.1 21.49-47.1 47.1C96 504.8 103.2 512 112 512h223.1c8.836 0 15.1-7.164 15.1-15.1V153.3c5.043-2.207 9.756-4.965 14.19-8.115l135.7 45.23C505.2 191.5 508.7 192 512 192zM256 304c0-15.62 1.1-7.252-85.12-181.5c-17.62-35.37-68.08-35.25-85.83 0c-86.38 172.7-85.04 165.4-85.04 181.5c0 44.12 57.25 79.1 127.1 79.1S256 348.1 256 304zM128 144l72.04 143.1H55.92L128 144z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Юридична та адвокатська служба</h3>
+                    <p>Юридичний супровід і контроль відповідності із законодавством всіх процесів функціонування багатоквартирного будинку</p>
+                  </div>
+                </div>
+                <div class="provide-card">
+                  <div class="provide-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M623.5 164C638.1 172.6 644.6 192.1 635.1 207.5C627.4 222.1 607.9 228.6 592.5 219.1L319.1 68.61L47.54 219.1C32.09 228.6 12.61 222.1 4.025 207.5C-4.558 192.1 1.008 172.6 16.46 164L304.5 4.027C314.1-1.342 325.9-1.342 335.5 4.027L623.5 164zM279.1 200C279.1 177.9 297.9 160 319.1 160C342.1 160 359.1 177.9 359.1 200C359.1 222.1 342.1 240 319.1 240C297.9 240 279.1 222.1 279.1 200zM103.1 296C103.1 273.9 121.9 256 143.1 256C166.1 256 183.1 273.9 183.1 296C183.1 318.1 166.1 336 143.1 336C121.9 336 103.1 318.1 103.1 296V296zM535.1 296C535.1 318.1 518.1 336 495.1 336C473.9 336 455.1 318.1 455.1 296C455.1 273.9 473.9 256 495.1 256C518.1 256 535.1 273.9 535.1 296zM226.9 491.4L199.1 441.5V480C199.1 497.7 185.7 512 167.1 512H119.1C102.3 512 87.1 497.7 87.1 480V441.5L61.13 491.4C54.84 503 40.29 507.4 28.62 501.1C16.95 494.8 12.58 480.3 18.87 468.6L56.74 398.3C72.09 369.8 101.9 352 134.2 352H153.8C170.1 352 185.7 356.5 199.2 364.6L232.7 302.3C248.1 273.8 277.9 255.1 310.2 255.1H329.8C362.1 255.1 391.9 273.8 407.3 302.3L440.8 364.6C454.3 356.5 469.9 352 486.2 352H505.8C538.1 352 567.9 369.8 583.3 398.3L621.1 468.6C627.4 480.3 623 494.8 611.4 501.1C599.7 507.4 585.2 503 578.9 491.4L551.1 441.5V480C551.1 497.7 537.7 512 519.1 512H471.1C454.3 512 439.1 497.7 439.1 480V441.5L413.1 491.4C406.8 503 392.3 507.4 380.6 501.1C368.1 494.8 364.6 480.3 370.9 468.6L407.2 401.1C405.5 399.5 404 397.6 402.9 395.4L375.1 345.5V400C375.1 417.7 361.7 432 343.1 432H295.1C278.3 432 263.1 417.7 263.1 400V345.5L237.1 395.4C235.1 397.6 234.5 399.5 232.8 401.1L269.1 468.6C275.4 480.3 271 494.8 259.4 501.1C247.7 507.4 233.2 503 226.9 491.4H226.9z"/></svg>
+                  </div>
+                  <div class="provide-card__text">
+                    <h3>Управлінська служба</h3>
+                    <p>Це генеральний директор, фінансовий директор, виконавчий директор і головний інженер. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id ="counter" class="count__container">
+              <div class="count__block-grid">
+                <div class="count__block">
+                  <div data-target="2021" class="count__block-number">0</div>
+                  <div class="count__block-text">Рік заснування</div>
+                </div>
+                <div class="count__block">
+                  <div data-target="26" class="count__block-number">0</div>
+                  <div class="count__block-text">Кількість об'єктів на обслуговуванні</div>
+                </div>
+                <div class="count__block">
+                  <div data-target="46" class="count__block-number">0</div>
+                  <div class="count__block-text">Кількість робітників</div>
+                </div>
+                <div class="count__block">
+                  <div data-target="86750" class="count__block-number">0</div>
+                  <div class="count__block-text">Кількість м² на обслуговуванні</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class = "footer" >
+        <div class="content__container-footer " >
+          <div class="footer__container section" id="contacts">
+            <h3>Центральний офіс</h3>
+            <div class="footer__address-row">
+              <div class="footer__address-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5093.070207692061!2d30.282410915119705!3d50.337924108360205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4b5b62d3c0001%3A0xc010ee14191a61d7!2z0YPQuy4g0JHQtdC70L7Qs9C-0YDQvtC00YHQutCw0Y8sIDI3LzIsINCR0L7Rj9GA0LrQsCwg0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMDgxNTA!5e0!3m2!1sru!2sua!4v1659972175593!5m2!1sru!2sua"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="footer__address-contacts">
+                  <div class="footer__address-contacts-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg>
+                  вул. Білогородська 27/2, м. Боярка, Київська обл.
+                </div>
+                <div class="footer__address-contacts-row">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                  <a href="mailto:msypravdom@gmail.comru">msypravdom@gmail.com</a>
+                </div>
+                <div class="footer__address-contacts-row">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+                  <ul>
+                    <li><a href="tel:+380 (96) 781-87-82">+380 (96) 781-87-82</a></li>
+                    <li><a href="tel:+380 (96) 781-87-82">+380 (96) 781-87-82</a></li>
+                    <li><a href="tel:+380 (96) 781-87-82">+380 (96) 781-87-82</a></li>
+                  </ul>
+                </div>
+                <div class="footer__address-contacts-work-with-us">
+                  <h4>Хочете у нас працювати?</h4>
+                  <p>Будь ласка, надішліть резюме та супровідний лист за адресою: <br><a href="mailto:msypravdom@gmail.comru">msypravdom@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__form-row">
+              <h4>Відповіді на запитання</h4>
+              <p>З задоволенням відповімо на всі ваші запитання по телефону, або просто заповніть форму нижче:</p>
+              <div class="footer__form">
+                <form>
+                  <label for="fname" class="form_label">Ваше ім'я:</label><br>
+                  <input type="text" id="fname" name="fname" placeholder="Ім'я"><br>
+                  <label class="form_label">Ваше прізвище:</label><br>
+                  <input type="text" id="lname" name="lname" placeholder="Прізвище"><br>
+                  <label class="form_label">Електронна адреса:</label><br>
+                  <input type="email" id="email" name="email" placeholder="Email"><br>
+                  <label class="form_label">Номер телефону:</label><br>
+                  <input type="text" id="phone" name="phone" placeholder="Номер телефону"><br>
+                  <label class="form_label">Залиште повідомлення:</label>
+                  <textarea id="textarea" name="textarea"
+                  rows="5" cols="33"></textarea>
+                  <button type="submit" class="submit-btn" placeholder="Надіслати">Надіслати</и>
+                </form>
+              </div>
+            </div>
+          </div>
+          <hr class="vertical-lines"/>
+          <span>© 2021 Керуюча компанія <strong> «М.С УПРАВДОМ»</strong></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src = "/js/swiper.js"></script>
+    <script src="/js/vanilla-tilt.js"></script>
+    <script src="/js/count.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/services.js"></script>
+  </body>
+</html>
