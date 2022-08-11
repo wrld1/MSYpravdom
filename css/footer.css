@@ -165,6 +165,7 @@ input[type="submit"]:focus {
   padding: 10px;
   font-size: 20px;
   width: 33.3%;
+  color: #28272a;
   background: #cac3b8;
   border: 0;
   border-radius: 6px;
