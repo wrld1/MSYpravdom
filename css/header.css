@@ -222,17 +222,15 @@ body._touch .menu__list > li._active .menu__sub-list {
   font-weight: 600;
 }
 
-.full-screen__content a {
+.full-screen__link {
   text-decoration: none;
   display: inline-block;
-  color: #fff;
-  background-color: rgba(24, 24, 24, 0.897);
-  font-size: 24px;
-  font-weight: 500;
-  border: 2px solid #fff;
-  padding: 14px 70px;
-  border-radius: 50px;
-  margin-top: 20px;
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+  border-top: 10px solid #fff;
+  border-right: 10px solid #fff;
+  transform: rotate(135deg);
 }
 
 .full-screen {

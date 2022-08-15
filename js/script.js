@@ -1,4 +1,7 @@
-"use strict";
+window.addEventListener("DOMContentLoaded", () => {
+  "use strict";
+  forms();
+});
 
 const isMobile = {
   Android: function () {
@@ -29,20 +32,6 @@ const isMobile = {
 
 let menuArrows = document.querySelectorAll(".arrow");
 
-// if (isMobile.any()) {
-//   document.body.classList.add("_touch");
-//   if (menuArrows.length > 0) {
-//     for (let index = 0; index < menuArrows.length; index++) {
-//       const menuArrow = menuArrows[index];
-//       menuArrow.addEventListener("click", (e) => {
-//         menuArrow.parentElement.classList.toggle("_active");
-//       });
-//     }
-//   }
-// } else {
-//   document.body.classList.add("_pc");
-// }
-
 if (menuArrows.length > 0) {
   for (let index = 0; index < menuArrows.length; index++) {
     const menuArrow = menuArrows[index];
@@ -71,7 +60,9 @@ if (iconMenu) {
 }
 
 //Smooth Scroll
-const menuLinks = document.querySelectorAll(".menu__link[data-goto]");
+const menuLinks = document.querySelectorAll(
+  ".menu__link[data-goto], .full-screen__link[data-goto]"
+);
 
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {

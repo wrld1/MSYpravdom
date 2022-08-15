@@ -7,6 +7,7 @@
 @import "./footer.css";
 @import "./swiper.css";
 @import "./city-page.css";
+@import "./service-page.css";
 
 * {
   margin: 0;

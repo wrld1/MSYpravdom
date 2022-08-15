@@ -25,7 +25,7 @@
 
 .footer__container h3 {
   font-size: 35px;
-  margin-bottom: 35px;
+  margin: 5px 0 35px 0;
   color: #28272a;
   font-weight: 700;
 }
@@ -108,12 +108,12 @@
 .footer__form-row {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   margin-top: 20px;
 }
 
-.footer__form {
+/* .footer__form {
   width: 66.6%;
   padding: 20px;
   margin: 15px;
@@ -121,22 +121,55 @@
   display: flex;
   justify-content: center;
   background-color: #28272a;
-}
+} */
 
-.footer__form form {
+.form__body {
+  position: relative;
   display: flex;
   color: #cac3b8;
   font-size: 20px;
   font-weight: 400;
   width: 66.6%;
   flex-direction: column;
+  align-items: center;
+
+  padding: 25px 20px;
+  margin: 15px auto;
+  border-radius: 6px;
+  justify-content: center;
+  background-color: #28272a;
 }
 
-.footer__form input {
-  padding: 10px;
+.form__body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(51, 51, 51, 0.9) url("../img/loading.gif") center / 50px no-repeat;
+  border-radius: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__body input {
+  padding: 15px 10px;
   background: #e6dfd4;
   border: 0;
   border-radius: 6px;
+  transition: all 0.5s ease 0s;
+  width: 66.6%;
+}
+
+.form__input._error {
+  box-shadow: 0 0 15px red;
 }
 
 ::placeholder {
@@ -147,17 +180,59 @@
 *:focus {
   outline: none;
 }
-input:focus {
+.footer__form input:focus {
+  box-shadow: 0 0 15px #6b8996;
+}
+
+textarea:focus {
   outline: #6b8996 solid 2px;
 }
 input[type="submit"]:focus {
   outline: #669900 solid 2px;
 }
 
-.footer__form textarea {
+.form__body textarea {
   background: #e6dfd4;
   border-radius: 6px;
   margin: 10px;
+  width: 66.6%;
+}
+
+.file__item {
+  position: relative;
+}
+
+.file__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.file__button {
+  display: inline-flex;
+  min-height: 40px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #6b8996;
+  padding: 0 20px;
+  margin: 5px 0 0 0;
+  color: #fff;
+}
+
+.file__preview {
+  display: inline-block;
+  max-width: 100px;
+  padding: 10px 0px 0px 0px;
+}
+
+.file__preview img {
+  max-width: 100%;
 }
 
 .submit-btn {
@@ -211,11 +286,11 @@ input[type="submit"]:focus {
     width: 450px;
     height: 350px;
   }
-  .footer__form {
+  .form__body {
     width: 100%;
     padding: 20px 0;
   }
-  .footer__form form {
+  .form__body input {
     width: 75%;
   }
   .submit-btn {
