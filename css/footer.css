@@ -164,12 +164,12 @@
   background: #e6dfd4;
   border: 0;
   border-radius: 6px;
-  transition: all 0.5s ease 0s;
+  transition: all 0.2s ease-in-out 0s;
   width: 66.6%;
 }
 
 .form__input._error {
-  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 15px rgb(248, 202, 132);
 }
 
 ::placeholder {
@@ -181,7 +181,7 @@
   outline: none;
 }
 .footer__form input:focus {
-  box-shadow: 0 0 15px #6b8996;
+  outline: 3px solid #6b8996;
 }
 
 textarea:focus {
@@ -237,14 +237,30 @@ input[type="submit"]:focus {
 
 .submit-btn {
   margin: 10px auto;
-  padding: 10px;
+  padding: 15px 10px;
   font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   width: 33.3%;
   color: #28272a;
   background: #cac3b8;
   border: 0;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 5px 0 rgb(14, 11, 11);
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+}
+
+.submit-btn:hover {
+  background: #a5988a;
+}
+
+.submit-btn:active {
+  top: 3px;
+  box-shadow: none;
 }
 
 .footer .vertical-lines {
@@ -273,6 +289,16 @@ input[type="submit"]:focus {
   .footer__address-contacts-work-with-us {
     margin-top: 10%;
   }
+  .form__body {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .form__body input {
+    width: 75%;
+  }
+  .submit-btn {
+    width: 66.6%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -285,16 +311,6 @@ input[type="submit"]:focus {
   .footer__address-map iframe {
     width: 450px;
     height: 350px;
-  }
-  .form__body {
-    width: 100%;
-    padding: 20px 0;
-  }
-  .form__body input {
-    width: 75%;
-  }
-  .submit-btn {
-    width: 66.6%;
   }
 }
 @media (max-width: 576px) {

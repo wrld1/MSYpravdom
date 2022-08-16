@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Послуги</title>
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <div class="app-content">
+          <div class="content__container service__page-container">
+            <div class="service__page-container-blur-block">
+              <h2 class="service__page-title">Комплексне обслуговування багатоквартирних ОСББ</h2>
+              <p>
+                Комплексне обслуговування багатоквартирних житлових будинків – це послуги, що
+                надаються власникам квартир житлових будинків, які не входять до ОСББ чи
+                кооперативів. У таких багатоквартирних будинках немає голови, бухгалтера чи
+                керуючого, які займалися б поточними справами з комунальних питань. Управлінням
+                багатоквартирного будинку (комплексне обслуговування) виконує компанія, що управляє.
+              </p>
+              <div class="service__calc">
+                <p>Впишіть параметри будинку і наші працівники зв'яжуться з вами через 15 хвилин</p>
+                <div class="footer__form">
+                  <form id="form" class="form__body">
+                    <label for="fname" class="form_label">Ваше ім'я*:</label><br />
+                    <input
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      placeholder="Ім'я"
+                      class="form__input _req"
+                    /><br />
+                    <label class="form_label">Електронна адреса*:</label><br />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      class="form__input _req _email"
+                    /><br />
+                    <label class="form_label">Номер телефону*:</label><br />
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="Номер телефону"
+                      class="form__input _req"
+                    /><br />
+                    <label class="form_label">Рік будинку*:</label><br />
+                    <input
+                      type="text"
+                      id="houseYear"
+                      name="houseYear"
+                      placeholder="Рік"
+                      class="form__input _req"
+                    /><br />
+                    <label class="form_label">Квадратура дома*:</label><br />
+                    <input
+                      type="text"
+                      id="metr"
+                      name="metr"
+                      placeholder="m2"
+                      class="form__input _req"
+                    /><br />
+                    <label class="form_label">Кількість квартир*:</label><br />
+                    <input
+                      type="text"
+                      id="flats"
+                      name="flats"
+                      placeholder="Кількість квартир"
+                      class="form__input _req"
+                    /><br />
+                    <label class="form_label">Додати фото:</label>
+                    <div class="file">
+                      <div class="file__item">
+                        <input
+                          id="formImage"
+                          accept=".jpg, .png, .gif"
+                          type="file"
+                          name="image"
+                          class="file__input"
+                        />
+                        <div class="file__button">Обрати</div>
+                      </div>
+                      <div id="formPreview" class="file__preview"></div>
+                    </div>
+                    <button type="submit" class="submit-btn" placeholder="Надіслати">
+                      Надіслати
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <img src="./img/service-pageBG.webp" alt="bg" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

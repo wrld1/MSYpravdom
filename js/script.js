@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
-  forms();
 });
 
 const isMobile = {
