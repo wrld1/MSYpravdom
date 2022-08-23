@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.classList.remove("_sending");
       } else {
         alert("Помилка");
+        form.classList.remove("_sending");
       }
     } else {
       alert("Заповніть обов'язкові поля");

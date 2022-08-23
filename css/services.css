@@ -5,7 +5,7 @@
 
 .accordion {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border: 2px solid #6b8996;
   cursor: pointer;
   border-radius: 50px;
@@ -28,8 +28,11 @@
   background: #6b8996;
   border-radius: 50%;
   float: left;
-  padding-top: 3px;
-  padding-right: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 3px; */
+  /* padding-right: 0.5px; */
   transition: all 0.5s ease-in;
   flex-shrink: 0;
 }
@@ -37,6 +40,7 @@
 .accordion .icon:after {
   content: "\002B";
   font-weight: 1000;
+  margin-top: 3px; /*ubrat esli ne fix*/
   font-size: 30px;
   transition: all 0.5s ease;
   color: rgb(255, 255, 255);
