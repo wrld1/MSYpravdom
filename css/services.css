@@ -40,7 +40,9 @@
 .accordion .icon:after {
   content: "\002B";
   font-weight: 1000;
-  margin-top: 3px; /*ubrat esli ne fix*/
+  margin-top: 15px;
+  margin-bottom: 13px;
+  /* margin-top: 3px; ubrat esli ne fix */
   font-size: 30px;
   transition: all 0.5s ease;
   color: rgb(255, 255, 255);
@@ -86,14 +88,12 @@
   font-size: 30px;
   font-weight: bolder;
   color: #6b8996;
+  margin-top: 15px;
+  margin-bottom: 13px;
 }
 
 @media (max-width: 767px) {
   .services_container {
     width: 100%;
   }
-}
-
-.test {
-  min-height: 1000px;
 }
