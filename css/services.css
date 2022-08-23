@@ -96,4 +96,12 @@
   .services_container {
     width: 100%;
   }
+
+  .accordion .icon:after {
+    margin-top: 11px;
+  }
+
+  .active .icon:after {
+    margin-top: 11px;
+  }
 }
