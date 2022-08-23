@@ -98,10 +98,10 @@
   }
 
   .accordion .icon:after {
-    margin-top: 11px;
+    margin-top: 9px;
   }
 
   .active .icon:after {
-    margin-top: 11px;
+    margin-top: 9px;
   }
 }
